@@ -117,7 +117,8 @@ for (const key of Object.keys(javascriptObject)) {
   newBody = `\`${body[0]
     .replaceAll(/\b .*[/>]/g, '')
     .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
-    .replaceAll(/\$\d[\w/<>-]*/g, '')}`;
+    .replaceAll(/\$\d[\w/<>-]*/g, '')
+    .replaceAll('|', '\\|')}`;
   if (newBody.includes('/* ') && !newBody.includes(' */')) {
     newBody += ' */`';
   } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
