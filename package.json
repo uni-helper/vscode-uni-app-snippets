@@ -100,6 +100,10 @@
       {
         "language": "vue",
         "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "jsonc",
+        "path": "./snippets/jsonc.json"
       }
     ]
   },
