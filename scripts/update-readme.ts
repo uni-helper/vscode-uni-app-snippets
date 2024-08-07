@@ -13,6 +13,9 @@ const htmlObject = JSON.parse(
 const cssObject = JSON.parse(
   readFileSync(resolve(root, 'snippets', 'css.json'), { encoding: 'utf8' }),
 );
+const jsoncObject = JSON.parse(
+  readFileSync(resolve(root, 'snippets', 'jsonc.json'), { encoding: 'utf8' }),
+);
 const javascriptObject = JSON.parse(
   readFileSync(resolve(root, 'snippets', 'javascript.json'), { encoding: 'utf8' }),
 );
@@ -103,6 +106,35 @@ for (const key of Object.keys(cssObject)) {
 }
 readme += '\n';
 
+// 添加 JSONC
+readme += '## JSON With Comments (`pages.json`)\n\n';
+readme += '|API|Prefix|Description|\n|-|-|-|\n';
+for (const key of Object.keys(jsoncObject)) {
+  const { prefix, body, description } = jsoncObject[key];
+  let newPrefix = '';
+  for (const text of prefix) {
+    newPrefix += `\`${text}\`, `;
+  }
+  newPrefix = newPrefix.slice(0, -2);
+  let newBody = '';
+  newBody = `\`${body[0]
+    .replaceAll(/\b .*[/>]/g, '')
+    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
+    .replaceAll(/\$\d[\w/<>-]*/g, '')
+    .replaceAll('|', '\\|')}`;
+  if (newBody.includes('/* ') && !newBody.includes(' */')) {
+    newBody += ' */`';
+  } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
+    newBody += ' -->`';
+  } else if (newBody.includes('<') && !newBody.includes('>')) {
+    newBody += '>`';
+  } else {
+    newBody += '`';
+  }
+  readme += `|${newBody}|${newPrefix}|${description}|\n`;
+}
+readme += '\n';
+
 // 添加 JavaScript/TypeScript
 readme += '## JavaScript/TypeScript\n\n';
 readme += '|API|Prefix|Description|\n|-|-|-|\n';
@@ -130,7 +162,6 @@ for (const key of Object.keys(javascriptObject)) {
   }
   readme += `|${newBody}|${newPrefix}|${description}|\n`;
 }
-readme += '\n';
 
 writeFileSync(readmePath, readme);
 
