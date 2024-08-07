@@ -108,6 +108,15 @@ readme += '\n';
 
 // 添加 JSONC
 readme += '## JSON With Comments (`pages.json`)\n\n';
+readme +=
+  '请参考 [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) 和 [Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) 调整你的 VS Code 设置，将 `pages.json` 视为 JSONC 文件，否则 VS Code 会报错。下面是一个修改 `settings.json` 的例子。\n\n';
+readme += '```jsonc\n';
+readme += '{\n';
+readme += '  "files.associations": {\n';
+readme += '    "pages.json": "jsonc"\n';
+readme += '  }\n';
+readme += '}\n';
+readme += '```\n\n';
 readme += '|API|Prefix|Description|\n|-|-|-|\n';
 for (const key of Object.keys(jsoncObject)) {
   const { prefix, body, description } = jsoncObject[key];

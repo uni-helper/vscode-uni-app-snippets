@@ -155,6 +155,16 @@
 
 ## JSON With Comments (`pages.json`)
 
+请参考 [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) 和 [Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) 调整你的 VS Code 设置，将 `pages.json` 视为 JSONC 文件，否则 VS Code 会报错。下面是一个修改 `settings.json` 的例子。
+
+```jsonc
+{
+  "files.associations": {
+    "pages.json": "jsonc"
+  }
+}
+```
+
 |API|Prefix|Description|
 |-|-|-|
 |`VUE3`|`platform-vue3`, `vue3`|uni-app VUE3 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
