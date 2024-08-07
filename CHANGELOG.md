@@ -1,5 +1,9 @@
 # 改动日志
 
+## 0.10.5 (2024-08-07)
+
+- feat: 添加 pages.json 添加编译提示，感谢 [wtto00](https://github.com/wtto00) 在 [#19](https://github.com/uni-helper/uni-app-snippets-vscode/pull/19) 的贡献
+
 ## 0.10.3 (2024-07-25)
 
 - feat: 支持鸿蒙平台提示，感谢 [wtto00](https://github.com/wtto00) 在 [#18](https://github.com/uni-helper/uni-app-snippets-vscode/pull/18) 的贡献
