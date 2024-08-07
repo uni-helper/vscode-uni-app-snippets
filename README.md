@@ -153,6 +153,40 @@
 |`var(--window-top)`|`--window-top`, `var(--window-top)`|uni-app 内容区域距离顶部的距离变量。更多信息查看 <https://uniapp.dcloud.io/frame?id=css%e5%8f%98%e9%87%8f>。|
 |`var(--window-bottom)`|`--window-bottom`, `var(--window-bottom)`|uni-app 内容区域距离底部的距离变量。更多信息查看 <https://uniapp.dcloud.io/frame?id=css%e5%8f%98%e9%87%8f>。|
 
+## JSON With Comments (`pages.json`)
+
+|API|Prefix|Description|
+|-|-|-|
+|`VUE3`|`platform-vue3`, `vue3`|uni-app VUE3 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`UNI-APP-X`|`platform-uni-app-x`, `uni-app-x`|uni-app UNI-APP-X 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`uniVersion`|`platform-uni-version`, `platform-uniVersion`, `uni-version`, `uniVersion`|uni-app uniVersion 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP`|`platform-app`, `app`|uni-app APP 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-PLUS`|`platform-app-plus`, `app-plus`|uni-app APP-PLUS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-PLUS-NVUE`|`platform-app-plus-nvue`, `app-plus-nvue`|uni-app APP-PLUS-NVUE 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-NVUE`|`platform-app-nvue`, `app-nvue`|uni-app APP-NVUE 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-ANDROID`|`platform-app-android`, `app-android`|uni-app APP-ANDROID 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-IOS`|`platform-app-ios`, `app-ios`|uni-app APP-IOS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`APP-HARMONY`|`platform-app-harmony`, `app-harmony`|uni-app APP-HARMONY 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`H5`|`platform-h5`, `h5`|uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`WEB`|`platform-web`, `web`|uni-app WEB 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-WEIXIN`|`platform-mp-weixin`, `mp-weixin`, `platform-weixin`, `weixin`, `platform-mp-wechat`, `mp-wechat`, `platform-wechat`, `wechat`|uni-app 微信小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-ALIPAY`|`platform-mp-alipay`, `mp-alipay`, `platform-alipay`, `alipay`, `platform-mp-ali`, `mp-ali`, `platform-ali`, `ali`, `platform-mp-my`, `mp-my`, `platform-my`, `my`|uni-app 支付宝小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-BAIDU`|`platform-mp-baidu`, `mp-baidu`, `platform-baidu`, `baidu`, `platform-mp-swan`, `mp-swan`, `platform-swan`, `swan`|uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-LARK`|`platform-mp-lark`, `mp-lark`, `platform-lark`, `lark`|uni-app 飞书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-QQ`|`platform-mp-qq`, `mp-qq`, `platform-qq`, `qq`|uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-KUAISHOU`|`platform-mp-kuaishou`, `mp-kuaishou`, `platform-kuaishou`, `kuaishou`|uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-JD`|`platform-mp-jd`, `mp-jd`, `platform-jd`, `jd`|uni-app 京东小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-360`|`platform-mp-360`, `mp-360`, `platform-360`, `360`|uni-app 360 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP-XHS`|`platform-mp-xhs`, `mp-xhs`, `platform-xhs`, `xhs`|uni-app 小红书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`MP`|`platform-mp`, `mp`, `platform-miniprogram`, `miniprogram`|uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`QUICKAPP-WEBVIEW`|`platform-quickapp`, `quickapp`, `platform-quickapp-webview`, `quickapp-webview`|uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`QUICKAPP-WEBVIEW-UNION`|`platform-quickapp-union`, `quickapp-union`, `platform-quickapp-webview-union`, `quickapp-webview-union`|uni-app 快应用联盟对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`QUICKAPP-WEBVIEW-HUAWEI`|`platform-quickapp-huawei`, `quickapp-huawei`, `platform-quickapp-webview-huawei`, `quickapp-webview-huawei`|uni-app 快应用华为对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`// #ifdef ${1\|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`// #ifndef ${1\|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+|`// #endif`|`#endif`, `endif`|uni-app 结束条件编译。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。|
+
 ## JavaScript/TypeScript
 
 |API|Prefix|Description|
